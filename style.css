@@ -1,0 +1,9 @@
+.initialized {
+    display: none;
+}
+.finished {
+    display: none;
+}
+.firstChoice , .secondChoice , .thirdChoice , .fourthChoice{
+    display: none;
+}

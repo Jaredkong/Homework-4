@@ -8,7 +8,7 @@ so that I can gauge my progress compared to my peers
 
 ## Description 
 
-The purpose of this project was to demonstrate the ability to save and retrieve from local storage.  It also showcases ability to utilize bootstrap, and traversing the DOM.
+The purpose of this project was to demonstrate the ability to save and retrieve from local storage.  It also showcases ability to utilize bootstrap, and traverse the DOM.
 
 ![Alt text](./assets/screenshot.jpg?raw=true "screenshot")
 
@@ -26,3 +26,7 @@ Bootstrap
 There is a lot of redundant code that I could improve upon.  For example, I made event listeners on every single button, with mostly the same code.
 To improve upon this, usage of radio buttons would greatly reduce the amount of code.  There are also a lot of HTML elements that I had to grab.
 The highscores list could also be sorted by descending order, in order to show the highest first.
+Another issue is that this project is difficult to scale with this structure.  For example, to add another question into this quiz is not as simple as just adding another question into the questions array.  
+
+## License
+Idk man 

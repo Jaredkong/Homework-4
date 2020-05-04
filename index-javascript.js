@@ -34,7 +34,6 @@ var calculatedScore;
 var highScores;
 if (localStorage.getItem("highscores")=== null){
     highScores = "";
-    console.log("Hello!!!!!!!!")
     localStorage.setItem("highscores", highScores);
 };
 
@@ -261,8 +260,6 @@ function submitter () {
     // highScores.push(initialsInput.value + ": " + calculatedScore);
     var anything = localStorage.getItem("highscores");
     anything += initialsInput.value + ": " + calculatedScore + ",";
-    console.log("asidjaos" + anything);
-    // console.log("osudifhsdauofusadboofhuadsofhudsuohfauoafhds" + highScores)
     localStorage.setItem("highscores", anything);
 };
  

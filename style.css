@@ -1,9 +1,7 @@
-.initialized {
-    display: none;
+#header {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.822) ;
 }
-.finished {
-    display: none;
-}
-.firstChoice , .secondChoice , .thirdChoice , .fourthChoice{
-    display: none;
+.hidden {
+    display:none;
 }

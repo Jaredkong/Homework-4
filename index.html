@@ -9,63 +9,82 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
+    <div id="header" class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-                View Highscores
+                <a href ="./hiScores.html" style="color:white">View Highscores</a>
             </div>
-            <div class="col-md-6">
-                Time:
+            <div id="timer" class="col-md-6">
+                
             </div>
         </div>
     </div>
     
-    <div class="container initial">
+    <div id ="initial" class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h1> Coding (?) Quiz Challenge</h1>
                 <p>Welcome to my quiz.  Please click below to begin my quiz.</p>
-                <button class="starter">Begin Quiz!</button>
+                <button type="button" class="btn btn-dark" id="starter">Begin Quiz!</button>
             </div>
         </div>
     </div>
     
-    <div class="container intialized">
+    <div id= "initialized" class="container-fluid hidden">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="questions"></h1>
-                <button class="firstChoice"></button>
-                <button class="secondChoice"></button>
-                <button class="thirdChoice"></button>
-                <button class="fourthChoice"></button>
+                <h1 id="questions"></h1>
+                <div id ="imageContainer">
+                    <img id="runescape" src="./assets/runescape.jpg" class="img-fluid hidden" alt="Runescape">
+                    <img id="bear" src="./assets/bear.jpg" class="img-fluid hidden" alt="Bear">
+                    <img id="shrek" src="./assets/shrek.jpg" class="img-fluid hidden" alt="Shrek">
+                    <img id="fruit" src="./assets/fruit.jpg" class="img-fluid hidden" alt="Fruit">
+                    <img id="questionmark" src="./assets/questionmark.jpg" class="img-fluid hidden" alt="Question mark">
+                </div>
+                <div id="questionContainer">
+                    <button type="button" class="btn btn-dark" id="firstChoice"></button>
+                    <button type="button" class="btn btn-dark" id="secondChoice"></button>
+                    <button type="button" class="btn btn-dark" id="thirdChoice"></button>
+                    <button type="button" class="btn btn-dark" id="fourthChoice"></button>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="container finished">
+    <div id="finalScore" class="container-fluid hidden">
         <div class="row">
             <div class="col-md-12">
                 <h1>All finished!</h1>
-                <p>Your final score is: </p> 
-                <form>
+                <p id="finale"></p> 
+                <form onsubmit="submitter()">
                     <div class="form-row">
                         <div class="col-md-6">
-                            Enter initials:
+                            
+                            <input type="text" class="form-control" id="initialsInput" placeholder="Enter Initials">
+                        </div>  
                         <div class="col-md-6">
-                            <input type="text" class="form-control">
+                            <input type="submit" class="form-control">
                         </div>
 
                     </div>
-
+                </form>
                 
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                
+            <div class= "col-md-12">
+               <div id ="popUp">
+                   
+               </div>
             </div>
-            <div class="col-md-6">
-
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id ="failure" class= "hidden col-md-12">
+                <h3>You ran out of time!</h3>
             </div>
         </div>
     </div>
